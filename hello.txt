@@ -1,2 +1,3 @@
 This line is from both branches: A and B.
 This is a change I want to stash.
+Change made by automated script
