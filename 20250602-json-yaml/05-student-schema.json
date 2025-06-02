@@ -1,0 +1,28 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Student",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "age": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "address": {
+        "type": "object",
+        "properties": {
+          "city": { "type": "string" },
+          "country": { "type": "string" }
+        },
+        "required": ["city", "country"]
+      },
+      "hobbies": {
+        "type": "array",
+        "items": { "type": "string" }
+      }
+    },
+    "required": ["name", "age", "address", "hobbies"]
+  }
