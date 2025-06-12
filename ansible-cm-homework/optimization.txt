@@ -1,0 +1,8 @@
+1. Disable fact gathering when it's not needed:
+   Use "gather_facts: false" at the top of your playbooks to speed up execution.
+
+2. Use loops instead of repetitive tasks:
+   Combine similar tasks using "with_items" or loop syntax to avoid duplication.
+
+3. Tag your tasks:
+   Run only the necessary parts of a playbook by using "--tags" to reduce execution time.

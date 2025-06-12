@@ -1,0 +1,9 @@
+Immutable infrastructure means servers or systems are never modified after they are deployed. 
+If something needs to change, a new version is created and deployed from scratch.
+
+This approach prevents configuration drift, increases consistency, and makes rollbacks easier.
+
+The challenge is that it requires automation and good tooling to rebuild and redeploy often.
+
+Tools like Docker help by packaging everything into containers that don’t change after creation. 
+Kubernetes then manages those containers and replaces them automatically if needed.

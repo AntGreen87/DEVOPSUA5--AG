@@ -1,0 +1,13 @@
+---
+- name: Playbook that handles errors
+  hosts: localhost
+  connection: local
+
+  tasks:
+    - name: This command will fail, but it won't stop the playbook
+      command: /bin/false
+      ignore_errors: yes
+
+    - name: This still runs!
+      debug:
+        msg: "We kept going after the failure!"

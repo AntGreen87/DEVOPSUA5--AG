@@ -1,0 +1,17 @@
+# Security Considerations in Configuration Management
+
+## How it Improves Security
+- Ensures consistent configuration across all environments
+- Automates the application of security patches
+- Reduces human error through repeatable playbooks
+
+## How it Can Compromise Security
+- Storing secrets in plain text (e.g., in Git)
+- Misusing "become: yes" can lead to privilege escalation
+- Not validating inventory sources (e.g., dynamic scripts)
+
+## Best Practices
+- Always use Ansible Vault to encrypt sensitive variables
+- Never commit vault passwords or plain-text secrets to Git
+- Use role-based access control (RBAC) to manage playbook execution
+- Audit and version-control your Ansible roles and inventories
