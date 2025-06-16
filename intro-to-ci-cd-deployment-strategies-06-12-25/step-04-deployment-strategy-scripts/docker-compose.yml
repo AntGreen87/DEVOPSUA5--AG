@@ -1,0 +1,16 @@
+version: '3'
+services:
+  blue:
+    build: .
+    ports:
+      - "5001:5000"
+    environment:
+      - VERSION=blue
+
+  green:
+    build: .
+    ports:
+      - "5002:5000"
+    environment:
+      - VERSION=green
+
