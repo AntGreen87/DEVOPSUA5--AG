@@ -12,5 +12,5 @@ jobs:
       - name: Install flake8
         run: pip install flake8
 
-      - name: Run flake8 ONLY on these two files
+      - name: Run flake8 ONLY on files we want
         run: flake8 flask_app.py test_app.py
