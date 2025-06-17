@@ -1,0 +1,10 @@
+name: Disable Ghost Workflow
+
+on: [push]
+
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Do nothing
+        run: echo "Disabling old ghost workflow"
