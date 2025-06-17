@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Do nothing
-        run: echo "Disabling old ghost workflow"
+        run: echo "This file disables the ghost flake8 workflow"
