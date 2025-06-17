@@ -1,10 +1,6 @@
-from flask import Flask
+def add(x, y):
+    return x + y
 
-app = Flask(__name__)
 
-@app.route("/")
-def home():
-    return "Hello from Flask!"
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+def subtract(x, y):
+    return x - y
