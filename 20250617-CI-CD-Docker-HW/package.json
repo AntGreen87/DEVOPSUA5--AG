@@ -1,0 +1,18 @@
+{
+  "name": "20250617-ci-cd-docker-hw",
+  "version": "1.0.0",
+  "description": "This folder contains all files for the CI/CD + Docker homework assignment (2025-06-17).",
+  "main": "03-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "eslint": "^9.29.0",
+    "globals": "^16.2.0"
+  }
+}
