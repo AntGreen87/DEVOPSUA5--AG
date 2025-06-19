@@ -1,0 +1,10 @@
+---
+- name: Install NGINX on test host
+  hosts: test
+  become: true
+
+  tasks:
+    - name: Ensure NGINX is installed
+      apt:
+        name: nginx
+        state: present
