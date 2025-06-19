@@ -1,4 +1,4 @@
-// Trigger build for homework
+// Triggering lint workflow
 const http = require('http');
 
 const server = http.createServer((req, res) => {
